@@ -12,7 +12,7 @@ $tmp_img = $_FILES["img"]["tmp_name"];
 $id =  $_SESSION['item_id'][0] ;
 
 $path = "img/$img";
-move_uploaded_file($tmp_img,$img);
+move_uploaded_file($tmp_img,$path);
 
 mysqli_query($con,"UPDATE items SET name = '$name', category = '$category', stock = $stock, price =  $price,
                  img = '$img' WHERE id = $id
