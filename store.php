@@ -2,14 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Admin</title>
+    <title>Shopify Store</title>
     <link href="style.css" rel="stylesheet">
 </head>
 <body >
 <nav id="store-header" style="background: #d2dae3">
    <div style="align-items: flex-end">
        <img src="img/sample.jpg" width="150" height="120" style="margin: 10px">
-       <p style="font-family: Arial;font-size: 1.5rem;margin: 0 0 10px 0 ;font-style: italic">Hello, <?php session_start(); echo $_SESSION['username']?></p>
+       <div style="display: flex;flex-direction: column;align-items: center">
+           <p style="width: 100%;text-align: start;font-family: Arial;font-size: 1.8rem;font-style: italic">Welcome to Shopify</p>
+           <p style="display: flex;align-items: flex-end;width: 100%;text-align:start;font-family: Arial;font-size: 1.2rem;margin: 0 0 10px 0 ;font-style: italic"><img style="margin-right: 0.3rem" src="img/people.png" width="30" height="30"> <?php session_start(); echo $_SESSION['username']?></p>
+       </div>
+
    </div>
     <div style="justify-content: flex-end;align-items: flex-end">
         <a href="logout.php" style="margin: 1rem">
