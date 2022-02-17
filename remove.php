@@ -1,6 +1,6 @@
 <?php
 session_start();
-$con = mysqli_connect("localhost", "root","", "shopzada");
+$con = mysqli_connect("localhost", "root","", "shopify");
 
     $all_id = $_SESSION['item_id'];
     foreach ($all_id as $item){

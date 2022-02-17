@@ -1,5 +1,5 @@
 <?php
-$con = mysqli_connect("localhost", "root","", "shopzada");
+$con = mysqli_connect("localhost", "root","", "shopify");
 
     $name=$_POST['name'];
     $category=$_POST['category'];

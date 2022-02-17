@@ -33,7 +33,7 @@
 
 
     <?php
-    $con = mysqli_connect("localhost", "root", "", "shopzada");
+    $con = mysqli_connect("localhost", "root", "", "shopify");
     if (!$con){
         die ("connection error");
     }
