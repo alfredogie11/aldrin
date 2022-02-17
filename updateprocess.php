@@ -15,7 +15,7 @@ $path = "img/$img";
 move_uploaded_file($tmp_img,$path);
 
 mysqli_query($con,"UPDATE items SET name = '$name', category = '$category', stock = $stock, price =  $price,
-                 img = '$img' WHERE id = $id
+                 img = '$path' WHERE id = $id
 ");
 //echo header("location:admin.php");
 echo "<script>window.location.href='admin.php'</script>"
